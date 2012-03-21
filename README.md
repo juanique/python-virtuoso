@@ -9,7 +9,7 @@ This is a Virtuoso wrapper library for python. It wraps the `isql-vt` shell to p
 
 ###Usage
 
-#SPARQL Query
+####SPARQL Query
 
     from virtuoso import Virtuoso
 
@@ -21,7 +21,7 @@ This is a Virtuoso wrapper library for python. It wraps the `isql-vt` shell to p
     for row in results:
         print row["s"].value, row["p"].value, row["o"].value
 
-#Insert and delete data
+####Insert and delete data
 
     from rdflib import Namespace, Literal
 
