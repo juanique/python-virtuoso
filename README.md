@@ -29,7 +29,7 @@ This is a Virtuoso wrapper library for python. It wraps the `isql-vt` shell to p
     ns = Namespace("http://my-name-space.com/#")
 
     #Insert a triple into the triplestore
-    # <http://my-name-space.com/#user123> <http://my-name-space.com/#user123>
+    # <http://my-name-space.com/#user123> <http://my-name-space.com/#user123> "Juan"
     triplestore.insert(graph, ns["user123"], ns["name"], Literal("Juan"))
 
     #Deleting the triple just inserted
