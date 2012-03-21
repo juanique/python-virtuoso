@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:_3="https://github.com/juanique/artichoke/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+> 
+  <rdf:Description rdf:about="https://github.com/juanique/artichoke/ns#subject">
+    <_3:predicate rdf:resource="https://github.com/juanique/artichoke/ns#object"/>
+  </rdf:Description>
+</rdf:RDF>
