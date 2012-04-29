@@ -1,5 +1,6 @@
 import tempfile
 import subprocess
+import os
 from rdflib import Graph
 
 class ISQLWrapperException(Exception):
@@ -47,7 +48,7 @@ class ISQLWrapper(object):
 
     def load_file(self, filename, graph):
         cmd = "DB.DBA.RDF_LOAD_RDFXML_MT( file_to_string_output('%s'), '', '%s', 1 );"
-        cmd %= (filename, graph)
+        cmd %= (os.path.abspath(filename), graph)
         return self.execute_cmd(cmd)
 
 
